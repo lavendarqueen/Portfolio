@@ -13,79 +13,65 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 1.5rem;
   text-decoration-color: darkslateblue;
-  height: 600px;
-  font-size: 1.7rem;
+  height: 180px;
+  margin: 50px 40px 0px 50px;
 }
 
 h1 {
   text-align: center;
-  padding-left: 3rem;
-  padding-top: 15px;
+  margin: 0px 40px 40px 40px;
 }
 
 .profilePic {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   border: 2px solid darkslateblue;
+  background-position-x: right;
+}
 
-  nav {
-    display: inline-flex;
-    width: 125px;
-    padding-bottom: 15px;
-    padding-right: 0.5rem;
-  }
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: left;
+  text-decoration: none;
+}
 
-  ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-left: 4rem;
-    font-size: 2rem;
-    height: 5.6rem;
-    width: 100px;
-  }
+nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  padding-right: 50px;
+  font-size: 8 px;
+  height: 60px;
+  width: 40px;
+}
 
-  li {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 0.5rem;
-    align-items: left;
-  }
+h2 {
+  margin: 0;
+  padding: bottom 5px;
+}
 
-  h2 {
-    margin: 0;
-    padding: bottom 5px;
-  }
+main {
+  margin-top: 20px;
+  height: 800px;
+  text-decoration-color: darkslateblue;
+}
 
-  main {
-    margin-top: 20px;
-    height: 800px;
-    border: 10px solid yellow;
-  }
-
-  section {
-    padding: 0px 50px 50px 50px;
-  }
+section {
+  padding: 0px 50px 50px 50px;
 }
 
 .portfolio {
   display: inline-flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-top: 25px;
+  border: 2px solid darkslateblue;
+  margin-top: 40px;
   height: 425px;
   width: 325px;
-  border: 2px solid black;
-}
-
-img {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
 footer {
@@ -101,10 +87,10 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  border: 2px solid black;
+  border: 2px solid darkslateblue;
   height: 120px;
   width: 400px;
-  padding-top: 5-23px;
+  padding-top: 23px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
