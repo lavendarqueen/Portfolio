@@ -5,6 +5,7 @@
 body {
   padding: 0px;
   margin: 0px;
+  text-decoration-color: darkblue;
 }
 
 html {
@@ -23,7 +24,6 @@ h1 {
   font-size: 150%;
 }
 
-h2,
 h3,
 h4,
 h5,
@@ -49,5 +49,5 @@ ul {
   list-style: none;
   font-size: 125%;
   font-family: inherit;
-  text-decoration-color: darkblue;
+  text-decoration-color: inherit;
 }
