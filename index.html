@@ -12,19 +12,20 @@
       <img src="./assets/images/profilePic.jpg" alt="My Profile Picture" />
       <h1 class="header-div">Portfolio of Phyllis Ann Lataille</h1>
       <nav>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-        <a href="github.html">GitHub</a>
+        <a href="#aboutMe">About Me</a>
+        <a href="#projects">My Work</a>
+        <a href="#contact">Contact</a>
+        <a href="#github">GitHub</a>
       </nav>
     </header>
     <main>
       <section>
-        <h2>Work Portfolio...Coming Soon!</h2>
-        <p id="portfolio">
+        <h2 id="aboutMe" href="aboutMe">About Me</h2>
+        <p>
           My family has several "computer people" and I have always been
           fascinated with computers. My mother was computer programmer in the
           days before the PC, programming mainframe computers that used punch
-          cards! My son has worked in IT for over 10 years and is currently a
+          cards! My son took web develpment in highschool and went to tournaments. He has worked in IT for over 10 years and is currently a
           systems administrator and my nephew is CEO of a web development
           company that he owns today, having started out as a web developer and
           a business management student.
@@ -38,56 +39,60 @@
           Bootcamp through the University of Denver. After graduation, I look
           forward to working in this cool and fascinating field.
         </p>
-        <div class="portfolioParent">
-          <div class="portfolio">
-            <a href="./assets/images/computerDesk.jpg">
-              <img
-                src="./assets/images/computerDesk.jpg"
-                alt="Photo of my computer desk"
-              />
-            </a>
+        <h2 id="projects" href="projects">Projects</h2>
+        <div class="grandParent">
+          <div class="parentTop">
+            <div id="codeRefactor" class="childTop">
+            <a href="./assets/images/Screenshot1.jpg"></a>
+              <card><h3 id="imageTitle">Code Refactor Project Screen Shot</h3>
+              <a href="https://lavendarqueen.github.io/marketing-code-refactor/">
+                <img src="./assets/images/Screenshot1.jpg" 
+                alt="Code Refactor Project Screenshot"/></a> 
+            </div>
+            </card>
           </div>
-          <div class="portfolio">
+          <div class="parentBottom">
+            <div id="workstation" class="portfolio">                       
+              <a href="./assets/images/computerDesk.jpg">
+            <card>
+              <h3 id="imageTitle">My Workstation</h3>
+                <img
+                src="./assets/images/computerDesk.jpg"
+                alt="Photo of My Workstation"
+              />
+            </div>
+            </card>
+           <div id="computer" class="portfolio">
             <a href="./assets/images/computer.jpg">
+              <card><h3 id="imageTitle">The Computer I Built</h3>
               <img
                 src="./assets/images/computer.jpg"
-                alt="Photo of the computer I built"
-              />
-            </a>
+                alt="Photo of the Computer I Built"/>
+            </card>
           </div>
-          <div class="portfolio">
-            <a href="./assets/images/computerFront.jpg">
+          <div id="Grogu" class="portfolio">
+            <a href="./assets/images/myLittleHelper.jpg">          
+              <card><h3 class="imageTitle">Grogu Helping Me Code!</h3>
               <img
-                src="./assets/images/computerFront.jpg"
-                alt="Photo of the front of my computer"
-              />
-            </a>
-          </div>
-          <div class="portfolio">
-            <a href="./assets/images/motherBoard.jpg">
-              <img
-                src="./assets/images/motherBoard.jpg"
-                alt="Photo of a mother board"
-              />
-            </a>
-          </div>
+                src="./assets/images/myLittleHelper.jpg"/>
+            </div>
+            </card>
+          </div>    
         </div>
       </section>
     </main>
+  </div>
     <footer>
       <div>
-        <h2>Contact Phyllis Ann Lataille</h2>
+        <h2 id="contact" href="contact">Contact Phyllis Ann Lataille</h2>
       </div>
       <div class="footerDiv">
         <h3>Email</h3>
-        <a id="contact" href="mailto:lataillep@gmail.com"
-          >lataillep@gmail.com</a
-        >
+        <a href="mailto:lataillep@gmail.com">lataillep@gmail.com</a>
       </div>
-      <div id="github" class="footerDiv">
+      <div class="footerDiv">
         <h3>GitHub Account</h3>
-        <a href="https://github.com/lavendarqueen?tab=repositories"
-          >Click here to visit my GitHub account</a
+        <a id="github" href="https://github.com/lavendarqueen?tab=repositories">Click here to visit my GitHub account</a
         >
       </div>
       <p>❣️Thank you for visiting❣️</p>
