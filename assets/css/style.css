@@ -1,10 +1,8 @@
 body {
-  display: flex;
-  flex-direction: column;
-  padding: 0px;
   margin: 0px;
   font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
     sans-serif;
+    font-size: 16px;
   color: darkblue;
   border: 2px solid darkblue;
   background-color: lightsteelblue;
@@ -12,56 +10,60 @@ body {
 }
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.5rem;
-  text-decoration-color: darkblue;
-  height: 180px;
-  margin: 42px 40px 0px 50px;
-}
-.headerDiv img {
-  display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+  text-decoration-color: darkblue;
+  max-width: auto;
+  margin: 0 8rem 0 .5em
 }
 h1 {
   display: flex;
+  justify-content: center;
   text-align: center;
-  margin: 50px 40px 40px;
-  padding: 50px;
-  font-size: 40px;
+  flex-wrap: flex;
+  margin: 9rem 4rem 5rem 4rem;
+  padding: 1rem;
+  font-size: 2.7em;
 }
+
 header img {
   display: flex;
   border: 2px solid darkblue;
+  margin-top: 5.5rem;
 }
 nav {
   display: flex;
   flex-direction: column;
-  justify-content: right;
+   flex-wrap: nowrap;
   text-decoration: none;
-  margin-top: 15px;
-  width: 150px;
+  font-weight:bold;
+  margin-top: 5rem;
+  /* width: 35px; */
 }
 nav a {
   display: flex;
-  flex-direction: column;
-  text-align: right;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
-  padding-bottom: 18px;
+  padding-bottom: 16px;
   padding-right: 10px;
   font-size: 30px;
   height: auto;
   width: 150px;
 }
 h2 {
+  display: flex;
+  justify-content: center;
   text-align: center;
-  margin-bottom: 24px;
-  margin-top: 24px;
-  font-size: x-large;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+  font-size: extra-large;
 }
 h2 #aboutMe {
   text-align: center;
+  margin-top: 0px;
   margin-bottom: 0px;
 }
 
@@ -72,13 +74,14 @@ h2:hover {
 h2 #projects {
   display: flex;
   text-align: center;
+  margin-top: 0.625em;
 }
 main {
   font-size: x-large;
   height: auto;
 }
 section {
-  margin: 10px 40px 24px 45px;
+  margin: 40px 40px 40px 40px;
   text-align: justify;
 }
 .grandParent {
@@ -106,17 +109,21 @@ div.parentTop {
 }
 
 div #codeRefactor .childTop {
+  display: flex;
+  flex-direction: column;
   padding: 30px 30px 30px 30px;
   margin-left: 30px;
   margin-right: 30px;
 }
 
 #codeRefactor {
+  display: flex;
   padding: 0px 30px 0px 30px;
   background-color: ivory;
   border: 2px solid darkblue;
   margin: 0 0 20px 0;
   text-decoration: none;
+
 }
 #card {
   margin: 20px 20px 0px 20px;
@@ -131,7 +138,12 @@ h3 #imageTitle {
   margin-bottom: 0px;
 }
 div #workstation.portfolio {
-  margin-right: 20px;
+  margin-right: 16px;
+}
+.parentBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .portfolio {
   display: flex;
@@ -146,11 +158,7 @@ div #workstation.portfolio {
   margin: 20px 20px 0px 20px;
   padding: 0px 50px 25px 50px;
 }
-.parentBottom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 img {
   border: 2px solid darkblue;
 }
@@ -160,14 +168,14 @@ footer {
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 100px;
-  padding-bottom: 2px;
+  padding-bottom: 2em;
 }
 
 h3 {
   display: flex;
   justify-content: center;
   margin-bottom: 12px;
-  font-size: 18px;
+  font-size: 1em;
 }
 
 .footerDiv {
@@ -207,9 +215,7 @@ footer h3 {
 
 @media (max-width: 1294px) {
   h3 {
-    font-size: 200%;
-    min-width: 22rem;
-    margin-right: -25rem;
+
   }
 }
 
@@ -224,33 +230,122 @@ footer h3 {
 }
 
 @media (max-width: 992px) {
+  header {
+    /* height: 1000px; */
+    flex-direction: column;
+  }
+  header img {
+    flex-direction: column;
+  }
+
 }
 
 @media (max-width: 768px) {
 }
 
-@media (min-width: 600px) {
-  @media screen and (min-width: 600px) {
-  .headerDiv {
+@media (max-width: 600px) {
+  @media screen and (max-width: 600px) {
+    header {
+    display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    height: 25rem;
+    margin: .5em; 
   }
+
   header img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: .5em;
   }
 
   h1 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    font-size: 2em;
+    font-size: 1.1em;
+    margin: .2em;
+    padding-top: .1em;
+    padding-bottom: .2em;
   }
   
   nav {
-    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    margin-top: .1em;
+    font-size: 2em;       
+  }
+
+  nav a {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding-bottom: .2em;
+    padding-right: 0.625em;
+    font-size: .5em;
+    padding-top: .2em;
+    height: auto;
+    width: 100%;
   }
+  h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1.5em;
+    margin-top: .5em;
+    font-size: .7em;
+  }
+  h2 #aboutMe {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;    
+  }
+  main {
+    font-size: 1.2em;
+    height: auto;
+  }
+  section {
+    margin: 40px 40px 40px 40px;
+    text-align:justify;
+  }
+  .parentBottom {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  .portfolio {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      border: 2px solid darkblue;
+      background: Ivory;
+      font-size: 18px;
+      object-fit: cover;
+      height: auto;
+      width: 390px;
+      margin: 20px 20px 0px 20px;
+      padding: 0px 50px 25px 50px;
+    }
+
+  div #workstation.portfolio {
+      margin-right: 16px;
+    }
+  /* .portfolio {
+      margin: 2em 0em 2em 0em;
+    }  */
+  img {
+      border: 2px solid darkblue;
+  }
+
+
 }
