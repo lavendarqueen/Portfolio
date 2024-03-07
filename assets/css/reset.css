@@ -20,7 +20,8 @@ body {
   text-decoration-color: darkblue;
 }
 
-h1 {
+h1,
+h2 {
   font-size: 150%;
 }
 
