@@ -17,14 +17,14 @@ header {
   align-items: center;
   text-decoration-color: darkblue;
   max-width: auto;
-  margin: 0rem 0 0.5rem;
+  margin: 0rem 20rem 0 20rem;
 }
 h1 {
   display: flex;
   justify-content: center;
   text-align: center;
   flex-wrap: flex;
-  margin: 7rem 4rem 5rem 4rem;
+  margin-right: 1rem;
   padding: 1rem;
   font-size: 2.7rem;
 }
@@ -37,23 +37,23 @@ nav {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  text-decoration: none;
   font-weight: bold;
   margin-top: 5rem;
-  width: 35px;
+  width: 10rem;
 }
 nav a {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   padding-bottom: 1rem;
-  padding-right: 6.25rem;
-  font-size: 18.75remm;
+  padding-right: 2rem;
+  margin-right: 2rem;
+  font-size: 18.5rem;
   height: auto;
-  width: 93.75rem;
+  width: 10rem;
 }
 h2 {
   display: flex;
@@ -66,7 +66,6 @@ h2 {
 h2 #aboutMe {
   text-align: center;
   margin-top: 0rem;
-  margin-bottom: 0rem;
 }
 h2:hover {
   text-decoration: underline;
@@ -90,22 +89,25 @@ p {
 }
 .grandParent {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
 .parentTop {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .childTop {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   object-fit: contain;
+  padding-bottom: 5rem;
   height: 60em;
-  width: 80rem;
+  width: 121rem;
 }
 div #codeRefactor .childTop {
   display: flex;
@@ -123,32 +125,23 @@ div #codeRefactor .childTop {
   margin: 0 0 1.2rem 0;
   text-decoration: none;
 }
-h3 #imageTitle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.875rem;
-  margin-top: 1rem;
-  margin-bottom: 0rem;
-}
 div #workstation.portfolio {
   margin-right: 1rem;
 }
 .parentBottom {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 div .portfolio {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   border: 2px solid darkblue;
   background: Ivory;
   font-size: 1.8rem;
   object-fit: cover;
-  height: auto;
-  width: 243.75rem;
   margin: 1.2rem 1.2rem 0rem 1.2rem;
   padding: 0rem 3rem 1.5rem 3rem;
 }
@@ -167,6 +160,7 @@ h2 #contact {
   margin-bottom: 0.3rem;
   font-size: 3rem;
 }
+
 h3 {
   display: flex;
   justify-content: center;
@@ -215,7 +209,7 @@ a:visited {
     flex-wrap: wrap;
     font-size: 6rem;
     margin-top: 0.5rem;
-    padding-top: 2rem 50rem 2rem 50rem;
+    padding: 2rem 25rem 2rem 25rem;
   }
   nav {
     display: flex;
@@ -229,10 +223,11 @@ a:visited {
   }
   nav a {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 2rem;
     text-decoration: none;
     padding-bottom: 0.2rem;
@@ -241,7 +236,7 @@ a:visited {
     margin-bottom: 0.5rem;
     font-size: 2rem;
     height: auto;
-    width: 100%;
+    width: 20rem;
   }
   main {
     margin: 0.5rem 0.5rem 0.5rem 0.5rem;
@@ -289,11 +284,11 @@ a:visited {
     padding: 0rem 1.8rem 0rem 1.8rem;
     text-decoration: none;
   }
-  #card {
+  /* #card {
     margin: 1rem 1rem 0rem 5rem;
     padding: 2rem 3rem 3rem 3rem;
     text-decoration: none;
-  }
+  } */
   h3 #imageTitle {
     display: flex;
     justify-content: center;
@@ -399,7 +394,6 @@ a:visited {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     margin-top: 2rem;
   }
   h1 {
@@ -701,15 +695,6 @@ a:visited {
     justify-content: center;
     align-items: center;
   }
-  .bottomImg {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    width: 30rem;
-  }
   div #computer.potfolio {
     padding-bottom: 0.5rem;
   }
@@ -814,7 +799,7 @@ a:visited {
     margin-bottom: 0.5rem;
     font-size: 2rem;
     height: auto;
-    width: 100%;
+    width: 5rem;
   }
   section {
     margin: 0.5rem 0.5rem 0.5rem 0.5rem;
@@ -857,9 +842,11 @@ a:visited {
     margin: 0rem;
     text-decoration: none;
   }
-  #imagTitle {
+  #imageTitle {
+    text-align: center;
     margin-top: 0.3rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
     text-decoration: none;
   }
   h3 .topImage {
@@ -869,7 +856,7 @@ a:visited {
     font-size: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    padding-top: 1rem;
+    padding-top: 0.8rem;
     padding-bottom: 1rem;
   }
   .grandParent {
@@ -889,17 +876,9 @@ a:visited {
   }
   .parentBottom {
     display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .bottomImg {
-    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: auto;
-    width: 25%;
   }
   div #computer.potfolio {
     padding-bottom: 0.5rem;
@@ -910,7 +889,6 @@ a:visited {
     flex-wrap: wrap;
     justify-content: center;
     border: 0.2rem solid darkblue;
-    /* background: Ivory; */
     font-size: 2rem;
     object-fit: cover;
     width: 38.5rem;
@@ -924,43 +902,39 @@ a:visited {
   h3 {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
-    align-items: center;
-    /* height: 14.43rem;
-    width: 10.8rem */
-  }
-  h3 {
+    text-align: center;
     font-size: 1.5rem;
-    margin-top: 0rem;
+    margin-top: 2rem;
   }
-  div .footerDiv {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid darkblue;
-    height: 8rem;
-    width: 30rem;
-    padding-bottom: 0.5rem;
-    margin-bottom: 43rem;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
-    font-size: 0.4rem;
-  }
-  footer {
-    margin-bottom: 0.2rem;
-    font-size: 1.2rem;
-  }
-  h4 {
-    margin-top: 1rem;
-    margin-bottom: 0rem;
-    padding-top: 1.5rem;
-    padding-bottom: 0.5rem;
-    font-size: 1.3rem;
-  }
-  .bottomMargin {
-    margin-bottom: 3rem;
-  }
+}
+div .footerDiv {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid darkblue;
+  height: 8rem;
+  width: 30rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 43rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  font-size: 0.4rem;
+}
+footer {
+  margin-bottom: 0.2rem;
+  font-size: 1.2rem;
+}
+h4 {
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+.bottomMargin {
+  margin-bottom: 3rem;
 }
