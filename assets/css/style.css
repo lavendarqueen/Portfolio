@@ -1,940 +1,399 @@
 html {
   font-size: 62.5%;
 }
+
 body {
-  margin: 0rem;
+  margin: 0;
+  padding: 0;
   font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
     sans-serif;
-  font-size: 1rem;
   color: darkblue;
-  border: 0.2rem solid darkblue;
+  border: 2px solid darkblue;
   background-color: lightsteelblue;
   background-image: radial-gradient(ivory, lightsteelblue);
 }
+
+span {
+width: 100%;
+height: auto;
+color: green;
+
 header {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration-color: darkblue;
-  max-width: auto;
-  margin: 0rem 20rem 0 20rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
 }
+
+#profilePic {
+  position: relative;
+  height: 16rem;
+  width: 16rem;
+  margin: 6rem 0 0 0;
+  border: 2px solid darkblue;
+}
+
 h1 {
   display: flex;
-  justify-content: center;
   text-align: center;
-  flex-wrap: flex;
-  margin-right: 1rem;
-  padding: 1rem;
-  font-size: 2.7rem;
+  margin: 2rem;
+  padding: 3rem 18rem 0 18rem;
+  font-size: 7rem;
 }
-header img {
-  display: flex;
-  border: 2px solid darkblue;
-  margin-top: 5.5rem;
+
+h2 {
+  font-size: 4rem;
 }
+
 nav {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  font-weight: bold;
-  margin-top: 5rem;
-  width: 10rem;
+  margin-top: 6rem;
+  height: 15.5rem;
+  width: 16rem;
+  border: 3px solid darkblue;
 }
+
 nav a {
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid lightsteelblue;
+  text-align: center;
+  background-color: darkblue;
+  color: lightsteelblue;
+  text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+}
+
+p {
+  margin: 0 5rem 0 5rem;
+  text-align: justify;
+  font-size: 3rem;
+  line-break: strict;
+}
+
+.projectsContainer {
+  background: green;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5rem;
+  padding: 0.5rem;
+}
+
+.parentContainer {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
-  padding-bottom: 1rem;
-  padding-right: 2rem;
-  margin-right: 2rem;
-  font-size: 18.5rem;
-  height: auto;
-  width: 10rem;
+  border: 2px solid darkblue;
+  background: ivory;
+  width: 100%;
+  padding-top: 0.2rem;
+  padding-bottom: 5rem;
+  font-size: 3.5rem;
 }
-h2 {
+
+.firstChild {
+  border: 2px solid darkblue;
   display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
-  font-size: 2rem;
-}
-h2 #aboutMe {
-  text-align: center;
-  margin-top: 0rem;
-}
-h2:hover {
-  text-decoration: underline;
-  text-decoration-color: darkblue;
-}
-h2 #projects {
-  display: flex;
-  text-align: center;
-  margin-top: 0rem;
-}
-main {
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 95%;
   height: auto;
 }
-section {
-  margin: 2rem;
-  text-align: justify;
+
+h3 {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 4rem;
 }
-p {
-  margin: 0.3rem 1.5rem 0.3rem 1.5rem;
-  font-size: 1.5rem;
+
+#imageTitleTop {
+  margin: 1rem;
 }
-.grandParent {
+
+.frame1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 30%;
+  border: 2px solid darkblue;
+  background: ivory;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: 5rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-bottom: 6rem;
 }
 
-.parentTop {
+.frame2 {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 30%;
+  border: 2px solid darkblue;
+  background: ivory;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: 5rem;
+  margin-right: 6rem;
+  margin-left: 6rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-bottom: 6rem;
 }
 
-.childTop {
+.frame3 {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  object-fit: contain;
-  padding-bottom: 5rem;
-  height: 60em;
-  width: 121rem;
-}
-div #codeRefactor .childTop {
-  display: flex;
-  flex-direction: column;
-  padding: 1.25rem 18.75rem 10rem 10rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  margin-bottom: 0rem;
-}
-#codeRefactor {
-  display: flex;
-  padding: 0rem 18.75rem 0rem 18.75rem;
-  background-color: ivory;
-  border: 2px solid darkblue;
-  margin: 0 0 1.2rem 0;
-  text-decoration: none;
-}
-div #workstation.portfolio {
-  margin-right: 1rem;
-}
-.parentBottom {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-div .portfolio {
-  display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 30%;
   border: 2px solid darkblue;
-  background: Ivory;
-  font-size: 1.8rem;
-  object-fit: cover;
-  margin: 1.2rem 1.2rem 0rem 1.2rem;
-  padding: 0rem 3rem 1.5rem 3rem;
-}
-img {
-  border: 2px solid darkblue;
-}
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  margin-bottom: 6.25rem;
-  padding-bottom: 2rem;
-}
-h2 #contact {
-  margin-bottom: 0.3rem;
-  font-size: 3rem;
+  background: ivory;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: 5rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-bottom: 6rem;
 }
 
-h3 {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 0.75rem;
-  font-size: 0.2rem;
+h5 {
+  margin: 2rem;
 }
-.footerDiv {
+.secondChild {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;;
   justify-content: center;
-  align-items: center;
   border: 2px solid darkblue;
-  height: 8rem;
   width: 30rem;
-  margin-right: 0.9rem;
-  margin-left: 0.9rem;
-  margin-top: 1rem;
 }
+
+nav a:hover {
+  color: lightsteelblue;
+  background: darkblue;
+}
+
 a:hover {
   text-decoration: underline;
   text-decoration-color: darkblue;
 }
 a:visited {
-  color: darkblue;
+  background: darkblue;
 }
-@media screen and (max-width: 1294rem) {
-  header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: auto;
-    margin: 0.5rem;
-  }
-  header img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 2rem;
-  }
-  h1 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    font-size: 6rem;
-    margin-top: 0.5rem;
-    padding: 2rem 25rem 2rem 25rem;
-  }
-  nav {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 0.1rem;
-    margin-bottom: 0.4rem;
-  }
-  nav a {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 2rem;
-    text-decoration: none;
-    padding-bottom: 0.2rem;
-    padding-right: 0.625rem;
-    padding-top: 0.25rem;
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
-    height: auto;
-    width: 20rem;
-  }
-  main {
-    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-  }
-  section {
-    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-  }
-  section {
-    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-    text-align: justify;
-  }
-  p {
-    margin: 0.5rem 3rem 1.5rem 3rem;
-    font-size: 1.6rem;
-  }
-  h2 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 1.5em;
-    margin-top: 0.5em;
-    margin-bottom: 1rem;
-    font-size: 1.7rem;
-  }
-  img {
-    border: 0.2rem solid darkblue;
-    align-items: center;
-    margin-top: 0.2rem;
-    height: auto;
-  }
-  .topImg {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 25%;
-  }
-  #codeRefactor {
-    display: flex;
-    flex-direction: row;
-    background-color: ivory;
-    border: 0.2rem solid darkblue;
-    margin: 0 0 1.2rem 0;
-    padding: 0rem 1.8rem 0rem 1.8rem;
-    text-decoration: none;
-  }
-  /* #card {
-    margin: 1rem 1rem 0rem 5rem;
-    padding: 2rem 3rem 3rem 3rem;
-    text-decoration: none;
-  } */
-  h3 #imageTitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 0rem;
-  }
-  .grandParent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .parentTop {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  div.parentTop {
-    display: flex;
-    height: auto;
-  }
-  .parentBottom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .bottomImg {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    width: 25%;
-  }
-  div #computer.potfolio {
-    padding-bottom: 0.5rem;
-  }
-  .portfolio {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    border: 0.2rem solid darkblue;
-    background: Ivory;
-    font-size: 2rem;
-    object-fit: cover;
-    height: auto;
-    width: 38.5rem;
-    margin: 1.2rem 2rem 0rem 1.5rem;
-    padding: 2.5rem 2rem 1.5em 1.7rem;
-  }
-  div #workstation.portfolio {
-    margin-right: 2rem;
-  }
-  h3 {
-    font-size: 1.5rem;
-    margin-top: 0rem;
-  }
-  div .footerDiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid darkblue;
-    height: 8rem;
-    width: 30rem;
-    padding-bottom: 0.5rem;
-    margin-bottom: 43rem;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
-    font-size: 0.4rem;
-  }
-  footer {
-    margin-bottom: 0.2rem;
-    font-size: 1.2rem;
-  }
-  h4 {
-    margin-top: 1rem;
-    margin-bottom: 0rem;
-    padding-top: 1.5rem;
-    padding-bottom: 0.5rem;
 
-    font-size: 1.3rem;
-  }
-  .bottomMargin {
-    margin-bottom: 3rem;
-  }
-}
-@media screen and (max-width: 1024rem) {
-  header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: auto;
-    margin: 0.5rem;
-  }
-  header img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-  }
-  h1 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    font-size: 3rem;
-    margin: 0.5rem;
-    padding-top: 2rem 2rem 2rem 2rem;
-  }
-  nav {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 0.1rem;
-    margin-bottom: 0.4rem;
-    font-size: 2rem;
-  }
-  nav a {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 0.2rem;
-    padding-right: 0.625rem;
-    padding-top: 0.25rem;
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
-    height: auto;
-    width: 100%;
-  }
-  main {
-    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-  }
-  section {
-    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-    text-align: justify;
-  }
-  p {
-    margin: 0.5rem 3rem 1.5rem 3rem;
-    font-size: 1.6rem;
-  }
-  h2 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 1.5em;
-    margin-top: 0.5em;
-    margin-bottom: 1rem;
-    font-size: 1.7rem;
-  }
-  img {
-    border: 0.2rem solid darkblue;
-    align-items: center;
-    margin-top: 0.2rem;
-    height: auto;
-  }
-  .topImg {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 25%;
-  }
-  #codeRefactor {
-    display: flex;
-    flex-direction: row;
-    background-color: ivory;
-    border: 0.2rem solid darkblue;
-    margin: 0 0 1.2rem 0;
-    padding: 0rem 1.8rem 0rem 1.8rem;
-    text-decoration: none;
-  }
-  #card {
-    margin: 1rem 1rem 0rem 5rem;
-    padding: 2rem 3rem 3rem 3rem;
-    text-decoration: none;
-  }
-  h3 #imageTitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 0rem;
-  }
-  .grandParent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .parentTop {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  div.parentTop {
-    display: flex;
-    height: auto;
-  }
-  .parentBottom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .bottomImg {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    width: 25%;
-  }
-  div #computer.potfolio {
-    padding-bottom: 0.5rem;
-  }
-  .portfolio {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    border: 0.2rem solid darkblue;
-    background: Ivory;
-    font-size: 2rem;
-    object-fit: cover;
-    height: auto;
-    width: 38.5rem;
-    margin: 1.2rem 2rem 0rem 1.5rem;
-    padding: 2.5rem 2rem 1.5em 1.7rem;
-  }
-  div #workstation.portfolio {
-    margin-right: 2rem;
-  }
-  h3 {
-    font-size: 1.5rem;
-    margin-top: 0rem;
-  }
-  div .footerDiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid darkblue;
-    height: 8rem;
-    width: 30rem;
-    padding-bottom: 0.5rem;
-    margin-bottom: 43rem;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
-    font-size: 0.4rem;
-  }
-  footer {
-    margin-bottom: 0.2rem;
-    font-size: 1.2rem;
-  }
-  h4 {
-    margin-top: 1rem;
-    margin-bottom: 0rem;
-    padding-top: 1.5rem;
-    padding-bottom: 0.5rem;
-
-    font-size: 1.3rem;
-  }
-  .bottomMargin {
-    margin-bottom: 3rem;
-  }
-}
-@media screen and (max-width: 768rem) {
-  header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: auto;
-    margin: 0.5rem;
-  }
-  header img {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-    margin-left: 2rem;
-  }
-  h1 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    font-size: 6rem;
-    margin: 3rem;
-    padding: 5.5rem 20rem 5rem 20rem;
-  }
-  nav {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 0rem;
-    font-size: 3rem;
-  }
-  a nav {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 2.5rem;
-    padding-left: 2rem;
-    padding-right: 1rem;
-    padding-top: 0.4rem;
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
-    height: auto;
-    width: 100%;
-  }
-  section {
-    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-    text-align: justify;
-  }
-  main {
-    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-  }
-  p {
-    margin: 0.5rem 3rem 1.5rem 3rem;
-    font-size: 3rem;
-  }
-  h2 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 1.5em;
-    margin-top: 0.5em;
-    margin-bottom: 1rem;
-    font-size: 2rem;
-  }
-  img {
-    border: 0.2rem solid darkblue;
-    align-items: center;
-    margin-top: 2.5rem;
-    height: auto;
-  }
-  .topImg {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 25%;
-  }
-  #codeRefactor {
-    display: flex;
-    flex-direction: row;
-    background-color: ivory;
-    border: 0.2rem solid darkblue;
-    margin: 0 0 1.2rem 0;
-    padding: 0rem 1.8rem 0rem 1.8rem;
-    text-decoration: none;
-  }
-  #card {
-    margin: 1rem 1rem 0rem 5rem;
-    padding: 2rem 3rem 3rem 3rem;
-    text-decoration: none;
-  }
-  h3 #imageTitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 0rem;
-  }
-  .grandParent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .parentTop {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  div.parentTop {
-    display: flex;
-    height: auto;
-  }
-  .parentBottom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  div #computer.potfolio {
-    padding-bottom: 0.5rem;
-  }
-  .portfolio {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    border: 0.2rem solid darkblue;
-    background: Ivory;
-    font-size: 2rem;
-    object-fit: cover;
-    margin: 1.2rem 2rem 0rem 1.5rem;
-    padding: 2.5rem 2rem 1.5em 1.7rem;
-  }
-  div #workstation.portfolio {
-    margin-right: 2rem;
-  }
-  .topImage {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  h3 {
-    font-size: 1.5rem;
-    margin-top: 0rem;
-  }
-  div .footerDiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid darkblue;
-    height: 8rem;
-    width: 30rem;
-    padding-bottom: 0.5rem;
-    margin-bottom: 43rem;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
-    font-size: 0.4rem;
-  }
-  footer {
-    margin-bottom: 0.2rem;
-    font-size: 1.2rem;
-  }
-  h4 {
-    margin-top: 1rem;
-    margin-bottom: 0rem;
-    padding-top: 1.5rem;
-    padding-bottom: 0.5rem;
-    font-size: 1.8rem;
-  }
-  .bottomMargin {
-    margin-bottom: 3rem;
-  }
-}
-@media screen and (max-width: 600rem) {
-  header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: auto;
-    margin: 0.5rem;
-  }
-  header img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 2rem;
-  }
-  h1 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    font-size: 3rem;
-    margin: 0.5rem;
-    padding-top: 2rem 2rem 2rem 2rem;
-  }
-  nav {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 0.1rem;
-    margin-bottom: 0.4rem;
-    font-size: 2rem;
-  }
-  nav a {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 0.2rem;
-    padding-right: 0.625rem;
-    padding-top: 0.25rem;
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
-    height: auto;
-    width: 5rem;
-  }
-  section {
-    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-    text-align: justify;
-  }
-  main {
-    margin: 0.5rem 3rem 1.5rem 3rem;
-  }
-  p {
-    margin: 0.5rem 3rem 1.5rem 3rem;
-    font-size: 1.6rem;
-  }
-  h2 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 1.5em;
-    margin-top: 0.5em;
-    margin-bottom: 1rem;
-    font-size: 1.7rem;
-  }
-  img {
-    border: 0.2rem solid darkblue;
-    align-items: center;
-    margin-top: 0.2rem;
-    height: auto;
-  }
-  .topImg {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 25%;
-  }
-  #codeRefactor {
-    display: flex;
-    flex-direction: row;
-    border: 0.2rem solid darkblue;
-    margin: 0rem;
-    text-decoration: none;
-  }
-  #imageTitle {
-    text-align: center;
-    margin-top: 0.3rem;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
-    text-decoration: none;
-  }
-  h3 .topImage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding-top: 0.8rem;
-    padding-bottom: 1rem;
-  }
-  .grandParent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .parentTop {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  div.parentTop {
-    display: flex;
-    height: auto;
-  }
-  .parentBottom {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  div #computer.potfolio {
-    padding-bottom: 0.5rem;
-  }
-  .portfolio {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    border: 0.2rem solid darkblue;
-    font-size: 2rem;
-    object-fit: cover;
-    width: 38.5rem;
-    margin: 1.2rem 2rem 0rem 1.5rem;
-    padding: 2.5rem 2rem 1.5em 1.7rem;
-  }
-
-  div #workstation.portfolio {
-    margin-right: 2rem;
-  }
-  h3 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    text-align: center;
-    font-size: 1.5rem;
-    margin-top: 2rem;
-  }
-}
-div .footerDiv {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid darkblue;
-  height: 8rem;
-  width: 30rem;
-  padding-bottom: 0.5rem;
-  margin-bottom: 43rem;
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
-  font-size: 0.4rem;
-}
 footer {
-  margin-bottom: 0.2rem;
-  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
 }
-h4 {
-  margin-top: 1rem;
-  margin-bottom: 0rem;
-  padding-top: 1.5rem;
-  padding-bottom: 0.5rem;
-  font-size: 1.3rem;
+
+/* /* @media screen and (max-width: 129.4rem) {
 }
-.bottomMargin {
-  margin-bottom: 3rem;
+
+@media screen and (max-width: 102.4rem) {
 }
+
+@media screen and (max-width: 76.8rem) {
+}
+@media screen and (max-width: 60rem) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  #profilePic {
+    position: relative;
+    height: 16rem;
+    width: 16rem;
+    margin: 6rem 0 0 0;
+    border: 2px solid darkblue;
+  }
+
+  h1 {
+    display: flex;
+    text-align: center;
+    margin: 2rem;
+    padding: 3rem 18rem 0 18rem;
+    font-size: 7rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    height: 15.5rem;
+    width: 16rem;
+    border: 3px solid darkblue;
+  }
+
+  nav a {
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid lightsteelblue;
+    text-align: center;
+    background-color: darkblue;
+    color: lightsteelblue;
+    text-decoration: none;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    margin: 0 5rem 0 5rem;
+    text-align: justify;
+    font-size: 3rem;
+    line-break: strict;
+  }
+
+  .projectsContainer {
+    /* background: green; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5rem;
+    padding: 0.5rem;
+  }
+
+  .parentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid darkblue;
+    background: ivory;
+    width: 100%;
+    padding-top: 0.2rem;
+    padding-bottom: 5rem;
+    font-size: 3.5rem;
+  }
+
+  .firstChild {
+    border: 2px solid darkblue;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 95%;
+    height: auto;
+  }
+
+  h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  #imageTitleTop {
+    margin: 1rem;
+  }
+
+  .frame1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+    border: 2px solid darkblue;
+    background: ivory;
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: 5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .frame2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    border: 2px solid darkblue;
+    background: ivory;
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: 5rem;
+    margin-right: 6rem;
+    margin-left: 6rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .frame3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    border: 2px solid darkblue;
+    background: ivory;
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: 5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  h5 {
+    margin: 2rem;
+  }
+  .secondChild {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid darkblue;
+    width: 30%;
+  }
+
+  nav a:hover {
+    color: lightsteelblue;
+    background: darkblue;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    text-decoration-color: darkblue;
+  }
+  a:visited {
+    background: darkblue;
+  }
+
+  footer {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .thankYou {
+    margin-bottom: 3rem;
+  }
+} 
+ /* 

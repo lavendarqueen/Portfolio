@@ -3,88 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Phyllis Ann Lataille</title>
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./tutorial.css" />
+    <title>Profile of Phyllis Ann Lataille</title>
   </head>
   <body>
+    <span>
     <header>
-      <img src="./assets/images/profilePic.jpg" alt="My Profile Picture" />
-      <h1>Phyllis Ann Lataille</h1>
-      <nav>
-        <a href="#aboutMe">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-        <a href="#github">GitHub</a>
-      </nav>
+      <img
+        id="profilePic"
+        src="./assets/images/profilePic.jpg"
+        alt="My Profile Picture"
+      />
+      <h1><span>Phyllis Ann Lataille</span>
+        <h2><span>Junior Web Developer</span></h2>
+      </h1>
+
+        <nav>
+         <a href="#aboutMe">About Me</a>
+         <a href="#projects">Projects</a>
+         <a href="#contact">Contact</a>
+         <a href="#github">GitHub</a>
+       </nav>
+      </span>
     </header>
     <main>
       <section>
-        <h2 id="aboutMe" href="aboutMe">About Me</h2>
+        <h3 id="aboutMe" href="aboutMe">About Me</h3>
         <p>
           My family has several "computer types" and I have always been
           fascinated with computers. My mother was a computer programmer in the
           days before the PC, programming mainframe computers that used punch
-          cards for input! My son took web development in high school and his team won tournaments. He has worked in IT for over 10 years and is currently a
-          systems administrator. My nephew is the CEO of a web development company that he owns today, having started out as a web developer and business management student.
+          cards for input! My son took web development in high school and his
+          team won tournaments. He has worked in IT for over 10 years and is
+          currently a systems administrator. My nephew is the CEO of a web
+          development company that he owns today, having started out as a web
+          developer and business management student.
         </p>
+        <br />
+        <br />
         <p>
           At age 18, I took my first computer course consisting of Cobol and
-          RPG2. Later in life, I took some courses in html, CSS, JavaScript,
-          and Bootstrap. My life has taken many turns since then but my fascination with computers has never waned. Things in the world of computers have changed a lot since then, so I enrolled in the Full Stack Web Development Bootcamp through the University of Denver. After graduation, I look forward to working in this cool and fascinating field.
+          RPG2. Later in life, I took some courses in html, CSS, JavaScript, and
+          Bootstrap. My life has taken many turns since then but my fascination
+          with computers has never waned. Things in the world of computers have
+          changed a lot since then, so I enrolled in the Full Stack Web
+          Development Bootcamp through the University of Denver. After
+          graduation, I look forward to working in this very cool and
+          fascinating field.
         </p>
-      </section>
-        <h2 id="projects" href="projects">Projects</h2>
-        <div class="grandParent">
-          <div class="parentTop">
-            <div id="codeRefactor" class="childTop">
-              <h3 id="imageTitle">Code Refactor Project Screen Shot</h3>
-                <a class="topImage" href="https://lavendarqueen.github.io/marketing-code-refactor/">
-                    <img src="./assets/images/Screenshot1.jpg" 
-                    alt="Code Refactor Project Screenshot"/>
-                  </div>
-              </div>
-              <div class="parentBottom">
-                <div id="workstation" class="portfolio">                       
-                  <a href="./assets/images/workstation.jpg">
-                  <h3>My Workstation</h3>
-                  <img
-                    src="./assets/images/workstation.jpg"
-                    alt="Photo of My Workstation"
-                  />
-                </div>
-               <div id="computer" class="portfolio">
-                <a href="./assets/images/computer.jpg">
-                  <h3>The Computer I Built</h3>
-                  <img
-                    src="./assets/images/computer.jpg"
-                    alt="Photo of the Computer I Built"/>
-              </div>
-              <div id="Grogu" class="portfolio">
-                <a href="./assets/images/myLittleHelper.jpg">         
-                  <h3>Grogu Helping Me Code!</h3>
-                  <img 
-                  src="./assets/images/myLittleHelper.jpg" 
-                  alt="Photo of Grogu Helping Me Code"/>
-                </div>
-              </div>
-            </div>
-          </main>
+        <h3 id="projects" href="projects">Projects</h3>
+        <div class="projectsContainer">
+          <div class="parentContainer">
+            <h4 id="imageTitleTop">Code Refactor Project Screen Shot</h4>
+            <a
+              id="screenshotLink"
+              href="https://lavendarqueen.github.io/marketing-code-refactor/"
+            ></a>
+            <img
+              class="firstChild"
+              src="./assets/images/Screenshot1.jpg"
+              alt="Code Refactor Project Screenshot"
+            />
+          </div>
+          <div class="frame1">
+            <h5 class="imageTitleBottom">My Workstation</h5>
+            <img
+              class="secondChild"
+              src="./assets/images/workstation.jpg"
+              alt="Photo of My Workstation"
+            />
+          </div>
+          <div class="frame2">
+            <h5 class="imageTitleBottom">The Computer I Built</h5>
+            <img
+              class="secondChild"
+              src="./assets/images/computer.jpg"
+              alt="Photo of the Computer I Built"
+            />
+          </div>
+          <div class="frame3">
+            <h5 class="imageTitleBottom">Grogu Helping Me Code!</h5>
+            <img
+              class="secondChild"
+              src="./assets/images/MyLittleHelper.jpg"
+              alt="Photo of Grogu Helping Me Code"
+            />
+          </div>
         </div>
+      </section>
+    </main>
     <footer>
       <div>
-        <h2 id="contact" href="contact">Contact Phyllis Ann Lataille</h2>
+        <h3 id="contact" href="contact">Contact Phyllis Ann Lataille</h3>
       </div>
       <div class="footerDiv">
         <h4>Email</h4>
-        <a class="bottomMargin" href="mailto:lataillep@gmail.com">lataillep@gmail.com</a>
+        <a class="bottomMargin" href="mailto:lataillep@gmail.com"
+          >lataillep@gmail.com</a
+        >
       </div>
       <div class="footerDiv">
         <h4>GitHub Account</h4>
-        <a id="github" class="bottomMargin" href="https://github.com/lavendarqueen?tab=repositories">Click here to visit my GitHub account</a
+        <a
+          id="github"
+          class="bottomMargin"
+          href="https://github.com/lavendarqueen?tab=repositories"
+          >Click here to visit my GitHub account</a
         >
       </div>
-      <h4>❣️Thank you for visiting❣️</h4p>
+      <h3 class="thankYou">❣️Thank you for visiting❣️</h3>
     </footer>
   </body>
 </html>
