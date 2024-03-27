@@ -82,17 +82,18 @@ p {
   justify-content: center;
   border: 2px solid darkblue;
   background: ivory;
-  width: 91%;
-  margin: 2rem 3rem 1cqh 3rem;
+  width: 93%;
+  margin: 2rem 5rem 1rem 5rem;
   padding-bottom: 5rem;
-  padding-left: 3rem;
+  padding-left: 5rem;
+  padding-right: 2rem;
   font-size: 3.5rem;
 }
 
 #firstChild {
   align-items: center;
   border: 2px solid darkblue;
-  width: 90%;
+  width: 95%;
 }
 
 h2 {
