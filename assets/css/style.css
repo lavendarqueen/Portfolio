@@ -16,6 +16,7 @@ body {
 header {
   display: flex;
   justify-content: center;
+  flex-wrap: nowrap;
   align-items: center;
   text-align: center;
   width: 100%;
@@ -31,12 +32,12 @@ header {
 }
 
 h1 {
-  width: 150rem;
+  width: 100%;
   height: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding: 3rem 3rem 3rem 3rem;
-  font-size: 7rem;
+  font-size: 6rem;
   color: darkblue;
 }
 
@@ -44,15 +45,14 @@ nav {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  height: 15.5rem;
-  width: 20rem;
+  text-justify: distribute-all-lines;
+  height: 16rem;
+  width: 16rem;
   margin: 6rem;
   border: 3px solid darkblue;
 }
 
 nav a {
-  /* display: flex;
-  align-items: center; */
   font-size: 3rem;
   font-weight: bold;
   text-decoration: none;
@@ -61,59 +61,43 @@ nav a {
   background-color: darkblue;
   color: lightsteelblue;
   text-decoration: none;
-  width: 16rem;
+  width: 15.5rem;
 }
 
 nav a:hover {
-  text-decoration: none;
-  background: lightsteelblue;
-  color: darkblue;
-}
-
-.paragraph {
-  display: flex;
+  text-decoration: underline;
+  color: lightsteelblue;
 }
 
 p {
   margin: 0 6rem 0 6rem;
   text-align: justify;
-  font-size: 3rem;
+  font-size: 4rem;
   line-break: strict;
-}
-
-.projectsContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 2rem 5rem 5rem 5rem;
-  padding: 0.5rem;
 }
 
 .parentContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   border: 2px solid darkblue;
   background: ivory;
-  width: 100%;
-  padding-top: 1rem;
+  width: 91%;
+  margin: 2rem 3rem 1cqh 3rem;
   padding-bottom: 5rem;
+  padding-left: 3rem;
   font-size: 3.5rem;
 }
 
-.firstChild {
+#firstChild {
+  align-items: center;
   border: 2px solid darkblue;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  width: 95%;
-  height: auto;
+  width: 90%;
 }
 
 h2 {
-  margin-bottom: 1rem;
   text-align: center;
+  margin-bottom: 1rem;
   font-size: 4rem;
 }
 
@@ -126,55 +110,33 @@ a:hover {
   text-decoration: underline;
 }
 
-#imageTitleTop {
-  margin: 1rem;
+.bottomFrame {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin-right: 5rem;
+  margin-left: 5rem;
 }
 
-.frame1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 25%;
+.imgFrame {
+  align-items: center;
+  text-align: center;
+  width: 65rem;
   border: 2px solid darkblue;
   background: ivory;
-  text-align: center;
-  font-size: 3rem;
   margin-top: 5rem;
+  font-size: 3rem;
+  padding-top: 2rem;
   padding-left: 5rem;
   padding-right: 5rem;
   padding-bottom: 5rem;
 }
 
-.frame2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 25%;
+.secondChild {
+  justify-content: space-between;
+  /* align-items: center; */
   border: 2px solid darkblue;
-  background: ivory;
-  text-align: center;
-  font-size: 3rem;
-  margin-top: 5rem;
-  margin-right: 3rem;
-  margin-left: 6.5rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-bottom: 5rem;
-}
-
-.frame3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 25%;
-  border: 2px solid darkblue;
-  background: ivory;
-  text-align: center;
-  font-size: 3rem;
-  margin-top: 5rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-bottom: 5rem;
+  width: 100%;
 }
 
 h3 {
@@ -185,18 +147,6 @@ h3 {
 
 h4 {
   margin: 2rem;
-}
-.secondChild {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  border: 2px solid darkblue;
-  width: 100%;
-}
-
-nav a:hover {
-  color: lightsteelblue;
-  background: darkblue;
 }
 
 a:hover {
@@ -213,11 +163,20 @@ footer {
   font-size: 2.5rem;
 }
 
-/* @media screen and (max-width: 129.4rem) {
+#contact {
+  margin-top: 3rem;
+  font-size: 3rem;
+}
+#margin-bottom {
+  font-size: 0.5rem;
+}
+
+.thankYou {
+  font-size: 2.5rem;
+}
+
+@media screen and (min-width: 99.3rem) and (max-width: 129rem) {
   header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
     text-align: center;
     height: 25rem;
@@ -225,335 +184,62 @@ footer {
 
   #profile-pic {
     position: relative;
-    height: 10rem;
-    width: 10rem;
-    margin: 1rem 2rem 0rem 2rem;
+    height: 16rem;
+    width: 16rem;
+    margin: 5rem;
     border: 2px solid darkblue;
   }
 
   h1 {
-    width: 100%;
-    height: auto;
-    margin-top: 0;
+    height: 25rem;
+    margin-top: 7rem;
     margin-bottom: 0;
-    padding: 0rem 3rem 0rem 3rem;
-    font-size: 2.5rem;
+    padding: 2rem 3rem 0rem 3rem;
+    font-size: 5rem;
   }
 
   nav {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    height: 8rem;
-    width: 10rem;
-    margin: 0;
-    border: 3px solid darkblue;
+    flex-wrap: nowrap;
+    height: 16rem;
+    width: 16rem;
+    margin: 5rem;
   }
 
   nav a {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 1.75rem;
+    font-size: 3.1rem;
     font-weight: bold;
     text-decoration: none;
-    border: 2px solid lightsteelblue;
     text-align: center;
-    background-color: darkblue;
-    color: lightsteelblue;
     text-decoration: none;
-    width: 10rem;
-  }
-
-  p {
-    margin: 0rem 6rem 0 6rem;
-    text-align: justify;
-    font-size: 2rem;
-    line-break: strict;
-  }
-
-  .projectsContainer {
-    margin: 0 5rem 5rem 5rem;
-    padding: 0.5rem;
-  }
-
-  .parentContainer {
-    display: flex;
-    flex-direction: column;
-    width: 60rem;
-    padding-top: 0.2rem;
-    padding-bottom: 5rem;
-    font-size: 3rem;
-  }
-
-  .firstChild {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 95%;
-    height: auto;
-  }
-
-  h2 {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    padding-top: 1rem;
-    text-align: center;
-    font-size: 2rem;
-  }
-
-  .frame1 {
-    font-size: 1rem;
-    margin-top: 3rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-bottom: 2rem;
-  }
-
-  .frame2 {
-    font-size: 1rem;
-    margin-left: 3rem;
-    margin-top: 5rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-bottom: 4rem;
-  }
-
-  .frame3 {
-    font-size: 0.5rem;
-    margin-top: 5rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-bottom: 4rem;
-  }
-
-  h3 {
-    margin-bottom: 1rem;
-    font-size: 1rem;
-  }
-
-  h4 {
-    margin: 2rem;
-  }
-
-  footer {
-    margin-bottom: 2rem;
-    font-size: 2.5rem;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-
-  a {
-    text-decoration: none;
-    color: darkblue;
-    font-size: 2rem;
-  }
-
-  @media screen and (max-width: 102.4rem) {
-    header {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      height: 25rem;
-    }
-
-    #profile-pic {
-      position: relative;
-      height: 11rem;
-      width: 11rem;
-      margin: 1rem 2rem 0rem 2rem;
-      border: 2px solid darkblue;
-    }
-
-    h1 {
-      width: 100%;
-      height: auto;
-      margin-top: 0;
-      margin-bottom: 0;
-      padding: 0rem 3rem 0rem 3rem;
-      font-size: 2.5rem;
-    }
-
-    nav {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      height: 10rem;
-      width: 11rem;
-      margin: 0;
-      border: 3px solid darkblue;
-    }
-
-    nav a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1.5rem;
-      font-weight: bold;
-      text-decoration: none;
-      border: 2px solid lightsteelblue;
-      text-align: center;
-      background-color: darkblue;
-      color: lightsteelblue;
-      text-decoration: none;
-      width: 10.5rem;
-    }
-
-    p {
-      margin: 0rem 6rem 0 6rem;
-      text-align: justify;
-      font-size: 2rem;
-      line-break: strict;
-    }
-
-    .projectsContainer {
-      margin: 0 5rem 5rem 5rem;
-      padding: 0.5rem;
-    }
-
-    .parentContainer {
-      display: flex;
-      flex-direction: column;
-      width: 60rem;
-      padding-top: 0.2rem;
-      padding-bottom: 5rem;
-      font-size: 3rem;
-    }
-
-    .firstChild {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      width: 95%;
-      height: auto;
-    }
-
-    h2 {
-      margin-bottom: 1rem;
-      margin-top: 1rem;
-      padding-top: 1rem;
-      text-align: center;
-      font-size: 2rem;
-    }
-
-    .frame1 {
-      font-size: 1rem;
-      margin-top: 3rem;
-      padding-left: 3rem;
-      padding-right: 3rem;
-      padding-bottom: 2rem;
-    }
-
-    .frame2 {
-      font-size: 1rem;
-      margin-left: 3rem;
-      margin-top: 5rem;
-      padding-left: 3rem;
-      padding-right: 3rem;
-      padding-bottom: 4rem;
-    }
-
-    .frame3 {
-      font-size: 0.5rem;
-      margin-top: 5rem;
-      padding-left: 3rem;
-      padding-right: 3rem;
-      padding-bottom: 4rem;
-    }
-
-    h3 {
-      margin-bottom: 1rem;
-      font-size: 1rem;
-    }
-
-    h4 {
-      margin: 2rem;
-    }
-
-    footer {
-      margin-bottom: 2rem;
-      /* text-align: center; */
-/* font-size: 2.5rem; */
-/* }
-  }
-} */
-
-/* @media screen and (max-width: 76.8rem) {
-  header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 25rem;
-  }
-
-  #profile-pic {
-    position: relative;
-    height: 15rem;
     width: 15rem;
-    margin: 1rem 2rem 0rem 2rem;
-    border: 2px solid darkblue;
-  }
-
-  h1 {
-    width: 100%;
-    height: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0rem 3rem 0rem 3rem;
-    font-size: 2.5rem;
-  }
-
-  nav {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 10rem;
-    width: 11rem;
-    margin: 0;
-    border: 3px solid darkblue;
-  }
-
-  nav a {
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-    border: 2px solid lightsteelblue;
-    text-align: center;
-    background-color: darkblue;
-    color: lightsteelblue;
-    text-decoration: none;
-    width: 10.5rem;
   }
 
   p {
     margin: 0rem 6rem 0 6rem;
     text-align: justify;
-    font-size: 2rem;
+    font-size: 3rem;
     line-break: strict;
   }
 
   .projectsContainer {
+    display: flex;
+    flex-direction: column;
     margin: 0 5rem 5rem 5rem;
     padding: 0.5rem;
   }
 
   .parentContainer {
-    display: flex;
-    flex-direction: column;
-    width: 100rem;
-    padding-top: 0.2rem;
+    align-items: center;
+    width: 100%;
+    padding-top: 0.5rem;
     padding-bottom: 5rem;
     font-size: 3rem;
   }
 
-  .firstChild {
+  #firstChild {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -564,175 +250,30 @@ footer {
   h2 {
     margin-bottom: 1rem;
     margin-top: 1rem;
-    padding: 5rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
-  .frame1 {
+  .imgframe1 {
     font-size: 1rem;
     margin-top: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
     padding-left: 3rem;
     padding-right: 3rem;
-    padding-bottom: 2rem;
-  }
-
-  .frame2 {
-    font-size: 1rem;
-    margin-left: 3rem;
-    margin-top: 5rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-bottom: 4rem;
-  }
-
-  .frame3 {
-    font-size: 0.5rem;
-    margin-top: 5rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-bottom: 4rem;
-  }
-
-  h3 {
-    margin-bottom: 1rem;
-    font-size: 1rem;
-  }
-
-  h4 {
-    margin: 2rem;
-  }
-
-  footer {
-    margin-bottom: 2rem;
-    font-size: 2.5rem;
-  }
-} */
-
-/* @media screen and (max-width: 60rem) {
-  header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 25rem;
-  }
-
-  #profile-pic {
-    position: relative;
-    height: 11rem;
-    width: 11rem;
-    margin: 1rem 2rem 0.5rem 2rem;
-    border: 2px solid darkblue;
-  }
-
-  h1 {
-    width: 100%;
-    height: auto;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    padding: 0rem 3rem 0rem 3rem;
-    font-size: 2.5rem;
-  }
-
-  nav {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 10rem;
-    width: 11rem;
-    margin: 0;
-    border: 3px solid darkblue;
-  }
-
-  nav a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.75rem;
-    font-weight: bold;
-    text-decoration: none;
-    border: 2px solid lightsteelblue;
-    text-align: center;
-    background-color: darkblue;
-    color: lightsteelblue;
-    text-decoration: none;
-    width: 10.5rem;
-  }
-
-  p {
-    margin: 0rem 6rem 0 6rem;
-    text-align: justify;
-    font-size: 2rem;
-    line-break: strict;
-  }
-
-  .projectsContainer {
-    margin: 0 5rem 5rem 5rem;
-    padding: 0.5rem;
-  }
-
-  .parentContainer {
-    display: flex;
-    flex-direction: column;
-    width: 60rem;
-    padding-top: 0.2rem;
-    padding-bottom: 5rem;
-    font-size: 3rem;
-  }
-
-  .firstChild {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 95%;
-    height: auto;
-  }
-
-  h2 {
-    margin-bottom: 0.5rem;
-    margin-top: 1rem;
-    padding-top: 1rem;
-    text-align: center;
-    font-size: 2rem;
-  }
-
-  .frame1 {
-    font-size: 3rem;
-    margin-top: 5rem;
-    padding-left: 4rem;
-    padding-right: 3.5rem;
-    padding-bottom: 4rem;
-    width: 27rem;
-  }
-
-  .frame2 {
-    font-size: 1rem;
-    margin-left: 3rem;
-    margin-top: 5rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-bottom: 4rem;
-    width: 28rem;
-  }
-
-  .frame3 {
-    font-size: 1rem;
-    margin-top: 6rem;
-    padding-left: 4rem;
-    padding-right: 2rem;
-    padding-bottom: 4rem;
-    width: 28rem;
+    padding-bottom: 3rem;
   }
 
   .secondChild {
-    width: 25rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95%;
   }
 
   h3 {
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   h4 {
@@ -743,4 +284,402 @@ footer {
     margin-bottom: 2rem;
     font-size: 2.5rem;
   }
-} */
+
+  #contact {
+    margin-top: 1rem;
+    font-size: 3rem;
+  }
+  #margin-bottom {
+    font-size: 0.5rem;
+  }
+
+  .thankYou {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 76.9rem) and (max-width: 99.2rem) {
+  header {
+    align-items: center;
+    text-align: center;
+    height: 25rem;
+  }
+
+  #profile-pic {
+    position: relative;
+    height: 16rem;
+    width: 16rem;
+    margin: 5rem;
+    border: 2px solid darkblue;
+  }
+
+  h1 {
+    height: 25rem;
+    margin-top: 6rem;
+    margin-bottom: 0;
+    padding: 2rem 3rem 0rem 3rem;
+    font-size: 5rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 16rem;
+    width: 16rem;
+    margin: 5rem;
+  }
+
+  nav a {
+    align-items: center;
+    font-size: 3.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    text-decoration: none;
+    width: 15rem;
+  }
+
+  p {
+    margin: 0rem 6rem 0 6rem;
+    text-align: justify;
+    font-size: 4rem;
+    line-break: strict;
+  }
+
+  .projectsContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5rem 5rem 5rem;
+    padding: 0.5rem;
+  }
+
+  .parentContainer {
+    align-items: center;
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 5rem;
+    font-size: 3rem;
+  }
+
+  #firstChild {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 95%;
+    height: auto;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .imgframe1 {
+    font-size: 1rem;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .secondChild {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95%;
+  }
+
+  h3 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  h4 {
+    margin: 2rem;
+  }
+
+  footer {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+
+  #contact {
+    margin-top: 1rem;
+    font-size: 3rem;
+  }
+  #margin-bottom {
+    font-size: 0.5rem;
+  }
+
+  .thankYou {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 57.6rem) and (max-width: 76.8rem) {
+  header {
+    align-items: center;
+    text-align: center;
+    height: 28rem;
+  }
+
+  #profile-pic {
+    position: relative;
+    height: 16rem;
+    width: 16rem;
+    margin: 2rem 5rem 1rem 5rem;
+    border: 2px solid darkblue;
+  }
+
+  h1 {
+    height: 16rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0;
+    font-size: 5rem;
+  }
+
+  nav {
+    text-justify: center;
+    height: 16rem;
+    width: 16rem;
+    margin: 3rem;
+    border: 3px solid darkblue;
+  }
+
+  nav a {
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid lightsteelblue;
+    text-align: center;
+    background-color: darkblue;
+    color: lightsteelblue;
+    text-decoration: none;
+    width: 15.5rem;
+  }
+
+  p {
+    margin: 0rem 2rem 0 2rem;
+    text-align: left;
+    font-size: 3rem;
+    line-break: strict;
+  }
+
+  .projectsContainer {
+    margin: 0 3rem 1rem 3rem;
+    padding: 0.5rem;
+    width: 95%;
+  }
+
+  .parentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    padding-bottom: 3rem;
+    padding-left: 4rem;
+    padding-right: 0rem;
+    font-size: 3rem;
+  }
+
+  #firstChild {
+    align-items: center;
+    width: 95%;
+    height: auto;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+    margin-top: 1;
+    padding-top: 0;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .bottomFrame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 95%;
+  }
+
+  .imgFrame {
+    font-size: 3rem;
+    margin-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .secondChild {
+    width: 95%;
+  }
+
+  h3 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  h4 {
+    margin: 2rem;
+  }
+
+  footer {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+
+  #contact {
+    margin-top: 1rem;
+    font-size: 3rem;
+  }
+  #margin-bottom {
+    font-size: 0.5rem;
+  }
+
+  .thankYou {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 57.6rem) {
+  header {
+    align-items: center;
+    text-align: center;
+    height: 28rem;
+  }
+
+  #profile-pic {
+    position: relative;
+    height: 13rem;
+    width: 13rem;
+    margin: 0 2rem 0 2rem;
+    border: 2px solid darkblue;
+  }
+
+  h1 {
+    height: 16rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    padding: 0;
+    font-size: 3rem;
+  }
+
+  nav {
+    height: 13rem;
+    width: 13rem;
+    margin: 2rem;
+    border: 3px solid darkblue;
+  }
+
+  nav a {
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid lightsteelblue;
+    text-align: center;
+    background-color: darkblue;
+    color: lightsteelblue;
+    text-decoration: none;
+    width: 12rem;
+  }
+
+  p {
+    margin: 0rem 2rem 0 2rem;
+    text-align: justify;
+    font-size: 2.5rem;
+    line-break: strict;
+  }
+  /*     
+  .projectsContainer {
+    margin: 0 2rem 1rem 3rem;
+    padding: 0.5rem;
+    width: 95%;
+  } */
+
+  .parentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin-left: 2rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 3rem;
+  }
+
+  #firstChild {
+    align-items: center;
+    width: 98%;
+    height: auto;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+    margin-top: 1;
+    padding-top: 0;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .bottomFrame {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 85%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .imgFrame {
+    font-size: 3rem;
+    margin-top: 3rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 4rem;
+    width: 70%;
+  }
+
+  .secondChild {
+    width: 75%;
+  }
+
+  h3 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  h4 {
+    margin: 2rem;
+  }
+
+  footer {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+
+  #contact {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+  }
+  #margin-bottom {
+    font-size: 0.5rem;
+  }
+
+  .thankYou {
+    font-size: 2rem;
+  }
+}
