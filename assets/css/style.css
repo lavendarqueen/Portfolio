@@ -225,13 +225,6 @@ footer {
     line-break: strict;
   }
 
-  .projectsContainer {
-    display: flex;
-    flex-direction: column;
-    margin: 0 5rem 5rem 5rem;
-    padding: 0.5rem;
-  }
-
   .parentContainer {
     align-items: center;
     width: 100%;
@@ -346,13 +339,6 @@ footer {
     text-align: justify;
     font-size: 4rem;
     line-break: strict;
-  }
-
-  .projectsContainer {
-    display: flex;
-    flex-direction: column;
-    margin: 0 5rem 5rem 5rem;
-    padding: 0.5rem;
   }
 
   .parentContainer {
@@ -470,12 +456,6 @@ footer {
     text-align: left;
     font-size: 3rem;
     line-break: strict;
-  }
-
-  .projectsContainer {
-    margin: 0 3rem 1rem 3rem;
-    padding: 0.5rem;
-    width: 95%;
   }
 
   .parentContainer {
@@ -600,12 +580,6 @@ footer {
     font-size: 2.5rem;
     line-break: strict;
   }
-  /*     
-  .projectsContainer {
-    margin: 0 2rem 1rem 3rem;
-    padding: 0.5rem;
-    width: 95%;
-  } */
 
   .parentContainer {
     display: flex;
