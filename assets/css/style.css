@@ -82,7 +82,7 @@ p {
   justify-content: center;
   border: 2px solid darkblue;
   background: ivory;
-  width: 93%;
+  width: 90%;
   margin: 2rem 5rem 1rem 5rem;
   padding-bottom: 5rem;
   padding-left: 5rem;
@@ -343,7 +343,7 @@ footer {
 
   .parentContainer {
     align-items: center;
-    width: 100%;
+    width: 85%;
     padding-top: 0.5rem;
     padding-bottom: 5rem;
     font-size: 3rem;
@@ -365,20 +365,23 @@ footer {
   }
 
   .imgframe1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
     font-size: 1rem;
     margin-top: 3rem;
     margin-left: 5rem;
     margin-right: 5rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     padding-bottom: 3rem;
+    width: 75%;
   }
 
   .secondChild {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 95%;
+    width: 90%;
   }
 
   h3 {
@@ -463,7 +466,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 95%;
+    width: 84%;
     padding-bottom: 3rem;
     padding-left: 4rem;
     padding-right: 0rem;
@@ -586,7 +589,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 85%;
+    width: 78%;
     margin-left: 2rem;
     padding-bottom: 3rem;
     padding-left: 3rem;
@@ -596,7 +599,7 @@ footer {
 
   #firstChild {
     align-items: center;
-    width: 98%;
+    width: 85;
     height: auto;
   }
 
@@ -643,11 +646,11 @@ footer {
 
   footer {
     margin-bottom: 2rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   #contact {
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-size: 2.5rem;
   }
   #margin-bottom {
@@ -655,6 +658,6 @@ footer {
   }
 
   .thankYou {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
