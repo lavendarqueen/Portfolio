@@ -82,7 +82,7 @@ p {
   justify-content: center;
   border: 2px solid darkblue;
   background: ivory;
-  width: 90%;
+  width: auto;
   margin: 2rem 5rem 1rem 5rem;
   padding-bottom: 5rem;
   padding-left: 5rem;
@@ -94,6 +94,7 @@ p {
   align-items: center;
   border: 2px solid darkblue;
   width: 95%;
+  margin-left: 1.5rem;
 }
 
 h2 {
@@ -227,7 +228,7 @@ footer {
 
   .parentContainer {
     align-items: center;
-    width: 100%;
+    width: auto;
     padding-top: 0.5rem;
     padding-bottom: 5rem;
     font-size: 3rem;
@@ -343,7 +344,7 @@ footer {
 
   .parentContainer {
     align-items: center;
-    width: 85%;
+    width: auto;
     padding-top: 0.5rem;
     padding-bottom: 5rem;
     font-size: 3rem;
@@ -466,7 +467,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 84%;
+    width: auto;
     padding-bottom: 3rem;
     padding-left: 4rem;
     padding-right: 0rem;
@@ -589,8 +590,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 78%;
-    margin-left: 2rem;
+    width: auto;
     padding-bottom: 3rem;
     padding-left: 3rem;
     padding-right: 3rem;
